@@ -5,13 +5,15 @@
     background-size: cover;
   }
 .text {
-    position: relative;
-    top: 40vh;
+    position: absolute;
+    top: 60vh;
+    left: 15vh;
     color: white;
 }
 .icon-bar {
   position: fixed;
   top: 40%;
+  z-index: 99;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -21,11 +23,10 @@
 .icon-bar a {
   display: block;
   text-align: center;
-  z-index: 99;
   padding: 16px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
+  font-size: 1vh;
 }
 
 /* Style the social media icons with color, if youwant */
@@ -39,10 +40,6 @@
 
 .github {
   background: white;
-}
-
-.email {
-  background: #dd4b39;
 }
 
 .linkedin {
