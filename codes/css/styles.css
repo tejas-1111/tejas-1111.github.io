@@ -1,0 +1,64 @@
+body {
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+  z-index: 99;
+  font-size: auto;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: auto;
+  border-radius: auto; 
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+ul.topnav {
+  position: sticky;
+  font-size: 2vh;
+  list-style-type: none;
+  margin: 0;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+    height: auto;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2vh 2vh;
+  text-decoration: no;
+}
+
+ul.topnav li a:hover:not(.active) {background-color:#111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+  ul.topnav {visibility: none;} 
+}
